@@ -10,6 +10,8 @@ CREATE TABLE contacts (
     phone_number VARCHAR(255)
 );
 
+DROP TABLE users;
+
 CREATE TABLE users (
     id INT AUTO_INCREMENT PRIMARY KEY,
     name VARCHAR(255),
@@ -18,3 +20,5 @@ CREATE TABLE users (
 );
 
 INSERT INTO contacts (name, phone_number) VALUES ("Pepe", "123456789");
+
+INSERT INTO users (name, email, password) VALUES ("test", "test@test.com", "12345678")
