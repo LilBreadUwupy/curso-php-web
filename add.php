@@ -20,7 +20,7 @@
         $statement->bindParam(":name", $_POST["name"]);
         $statement->execute();
   
-        header("Location: index.php");
+        header("Location: home.php");
       }
   }
 ?>
